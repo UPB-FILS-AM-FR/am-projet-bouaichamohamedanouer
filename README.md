@@ -1,15 +1,15 @@
-# Your Project Name
+# Station meteo
 
 | | |
 |-|-|
-|`Author` | Your full name
+|`Author` | Mohamed Anouer Bouaicha
 
 ## Description
-
+Station meteo qui a un termometre et un ecran
 ## Motivation
-
+j'aime la meteo
 ## Architecture
-
+le termometre envoi au arduino les donnees de la temperature qui les affiche sur l'ecran
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
@@ -21,13 +21,13 @@
 
 ### Components
 
-
 <!-- This is just an example, fill in with your actual components -->
 
 | Device | Usage | Price |
 |--------|--------|-------|
-| Activ Buzzer | Buzzer | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| Push Button | Button | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
+| Arduino  | Plaque de base  | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
+| termometre  | detecte la temperature | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
+| Ecran | Affiche | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
 | Jumper Wires | Connecting components | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/884-set-fire-tata-tata-40p-10-cm.html?search_query=set+fire&results=110) |
 | Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
 
