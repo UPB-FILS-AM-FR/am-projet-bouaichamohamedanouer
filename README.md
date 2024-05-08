@@ -5,11 +5,15 @@
 |`Author` | Mohamed Anouer Bouaicha
 
 ## Description
-Station meteo qui a un termometre et un ecran
+Station météo qui mesure la température et l'affiche sur un écran.
 ## Motivation
-j'aime la meteo
+j'aime  la météo et je souhaite disposer d'une station météo pour suivre les conditions météorologiques locales.
 ## Architecture
-le termometre envoi au arduino les donnees de la temperature qui les affiche sur l'ecran
+La station météo est composée de deux composants principaux :
+
+Un thermomètre qui mesure la température ambiante.
+Un écran qui affiche la température mesurée par le thermomètre.
+Le thermomètre est connecté à un Arduino, qui est un microcontrôleur. L'Arduino reçoit les données de température du thermomètre et les affiche sur l'écran
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
