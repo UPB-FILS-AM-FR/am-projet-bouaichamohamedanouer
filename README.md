@@ -46,7 +46,7 @@ Le thermomètre et le capteur de pression sont connecté à un Arduino, qui est 
 |---------|-------------|-------|
 | [pour l'ecran](https://github.com/blackhack/LCD_I2C/blob/master/src/LCD_I2C.h) | Arduino library to control a 16x2 LCD via an I2C adapter based on PCF8574| Pour pouvoir utiliser l'ecran LCD  |
 | [pour la temperature](https://github.com/adafruit/DHT-sensor-library) | An Arduino library for the DHT series of low-cost temperature/humidity sensors. | Pour pouvoir utiliser le dht11  |
-| [pour la pression](https://github.com/adafruit/Adafruit_BMP280_Library) | An Arduino library for the DHT series of low-cost temperature/humidity sensors. | Pour pouvoir utiliser le bmp280   |
+| [pour la pression](https://github.com/adafruit/Adafruit_BMP280_Library) | This driver is for the Adafruit BMP280 Breakout | Pour pouvoir utiliser le bmp280   |
 
 ## Log
 
