@@ -5,23 +5,24 @@
 |`Author` | Mohamed Anouer Bouaicha
 
 ## Description
-Station météo qui mesure la température et l'affiche sur un écran.
+Station météo qui mesure la température, l'humidite, la pression et l'affiche sur un écran.
 ## Motivation
 j'aime  la météo et je souhaite disposer d'une station météo pour suivre les conditions météorologiques locales.
 ## Architecture
-La station météo est composée de deux composants principaux :
+La station météo est composée de trois composants principaux :
 
 Un thermomètre qui mesure la température ambiante.
 Un écran qui affiche la température mesurée par le thermomètre.
-Le thermomètre est connecté à un Arduino, qui est un microcontrôleur. L'Arduino reçoit les données de température du thermomètre et les affiche sur l'écran
+Un capteur de pression barometrique qui mesure la pression ambiante
+Le thermomètre et le capteur de pression sont connecté à un Arduino, qui est un microcontrôleur. L'Arduino reçoit les données les affiche sur l'écran.
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
-![Block Diagram](schematics/block_diagram.png)
+![Block Diagram](meteo.png)
 
 ### Schematic
 
-![Schematic](schematics/kicad_schematic.png)
+![Schematic](Schema.png)
 
 ### Components
 
@@ -29,11 +30,13 @@ Le thermomètre est connecté à un Arduino, qui est un microcontrôleur. L'Ardu
 
 | Device | Usage | Price |
 |--------|--------|-------|
-| Arduino  | Plaque de base  | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| termometre  | detecte la temperature | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| Ecran | Affiche | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
+| Arduino  | Plaque de base  | [25 RON](https://www.optimusdigital.ro/ro/compatibile-cu-arduino-nano/1686-placa-de-dezvoltare-compatibila-cu-arduino-nano-atmega328p-i-ch340.html?search_query=Arduino+Nano&results=22) |
+| termometre  | detecte la temperature | [7 RON](https://www.optimusdigital.ro/ro/senzori-senzori-de-temperatura/584-senzor-de-temperatura-dht11.html?search_query=dht11&results=17) |
+| capteur pression | detecte la pression | [9 RON](https://www.optimusdigital.ro/ro/senzori-senzori-de-presiune/1777-modul-senzor-de-presiune-barometric-bmp280.html?search_query=senzor+presiune+barometrica&results=4) |
+| Ecran | Affiche | [17 RON](https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/2894-lcd-cu-interfata-i2c-si-backlight-albastru.html) |
 | Jumper Wires | Connecting components | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/884-set-fire-tata-tata-40p-10-cm.html?search_query=set+fire&results=110) |
 | Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
+
 
 ### Libraries
 
@@ -41,8 +44,9 @@ Le thermomètre est connecté à un Arduino, qui est un microcontrôleur. L'Ardu
 
 | Library | Description | Usage |
 |---------|-------------|-------|
-| [lib-name1](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
-| [lib-name2](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
+| [pour l'ecran](https://github.com/blackhack/LCD_I2C/blob/master/src/LCD_I2C.h) | Arduino library to control a 16x2 LCD via an I2C adapter based on PCF8574| Pour pouvoir utiliser l'ecran LCD  |
+| [pour la temperature](https://github.com/adafruit/DHT-sensor-library) | An Arduino library for the DHT series of low-cost temperature/humidity sensors. | Pour pouvoir utiliser le dht11  |
+| [pour la pression](https://github.com/adafruit/Adafruit_BMP280_Library) | An Arduino library for the DHT series of low-cost temperature/humidity sensors. | Pour pouvoir utiliser le bmp280   |
 
 ## Log
 
